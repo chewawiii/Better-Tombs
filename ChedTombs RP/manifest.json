@@ -1,0 +1,30 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "ChedTombs Add-On [RP]",
+		"description": "Created by Chewawiii",
+		"min_engine_version": [1, 26, 10],
+		"uuid": "a334b596-1ea5-46fb-9bf5-4e5c2029e13d",
+		"version": "1.0.0-beta"
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "1dd794c2-d155-4c8d-be7c-17579d2ca9b5",
+			"version": [1, 0, 0]
+		}
+	],
+	"dependencies": [
+		{
+			// Behavior Pack
+			"uuid": "4a71cda2-66a8-448f-9a95-5b5f259ff173",
+			"version": "1.0.0-beta"
+		}
+	],
+	"capabilities": ["pbr"],
+	"metadata": {
+		"authors": ["Chewawiii"],
+		"license": "MTI",
+		"product_type": "addon"
+	}
+}

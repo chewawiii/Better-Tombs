@@ -1,0 +1,44 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "ChedTombs Add-On [BP]",
+		"description": "Created by Chewawiii",
+		"min_engine_version": [1, 26, 10],
+		"uuid": "4a71cda2-66a8-448f-9a95-5b5f259ff173",
+		"version": "1.0.0-beta"
+	},
+	"dependencies": [
+		{
+			// Resource Pack
+			"uuid": "a334b596-1ea5-46fb-9bf5-4e5c2029e13d",
+			"version": "1.0.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.5.0"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "2.0.0"
+		}
+	],
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "a50e18a6-7d42-4617-9f4b-eea8f8269bfe",
+			"version": "1.0.0"
+		},
+		{
+			"type": "script",
+			"language": "Javascript",
+			"entry": "scripts/TombLoad.js",
+			"uuid": "4464efad-02c2-4235-a924-93f296d5299b",
+			"version": "1.0.0"
+		}
+	],
+	"metadata": {
+		"authors": ["Chewawiii"],
+		"license": "MTI",
+		"product_type": "addon"
+	}
+}
