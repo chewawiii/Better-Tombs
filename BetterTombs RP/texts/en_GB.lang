@@ -1,0 +1,73 @@
+ui.info.title=Better Tombs | Gravestones Add-On
+
+tombs:tombstone_1.name=Tombstone
+tombs:tombstone_2.name=Tombstone
+
+ui.close.button=Close
+
+ui.system.settings.button=System Settings
+ui.settings.button=Personal Settings
+ui.changelog.button=Changelog
+
+ui.system.settings.title=System Settings
+
+ui.announce.death.toggle=Announce death coordinates
+ui.announce.death.tooltip=When enabled, the player's death coordinates will be announced.
+
+ui.max.tombs.slider=Max. tombs per player
+ui.max.tombs.tooltip=Use 0 to allow unlimited tombs.
+
+ui.protection.duration.slider=Protection duration
+ui.protection.duration.tooltip=Duration is measured in minutes.
+
+ui.curse.level.dropdown=Curse difficulty
+ui.curse.level.none=Disabled
+ui.curse.level.easy=Easy
+ui.curse.level.normal=Normal
+ui.curse.level.hard=Hard
+ui.curse.level.extreme=Extreme
+
+ui.curse.entity.dropdown=Curse entity
+ui.entity.zombie=Zombie
+ui.entity.husk=Husk
+ui.entity.skeleton=Skeleton
+ui.entity.vex=Vex
+
+ui.curse.effect.dropdown=Curse effect
+ui.effect.slowness=Slowness
+ui.effect.weakness=Weakness
+ui.effect.blindness=Blindness
+ui.effect.darkness=Darkness
+ui.effect.poison=Poison
+ui.effect.nausea=Nausea
+
+ui.bypass.protection.toggle=Admin ignores protection
+
+ui.system.settings.saved=System settings have been saved.
+
+ui.settings.title=Your Settings
+
+ui.item.chance.dropdown=Soul Fragment chance
+ui.item.chance.tooltip=Higher chance will consume more experience.
+ui.item.chance.none=Disabled
+ui.item.chance.low=Low
+ui.item.chance.medium=Medium
+ui.item.chance.high=High
+
+ui.confirm.teleport.toggle=Confirm teleport?
+ui.confirm.teleport.tooltip=When enabled, you must use the item twice to teleport.
+
+ui.teleport.effects.toggle=Show teleport effects
+
+ui.show.distance.toggle=Show tomb distance
+
+ui.show.coordinates.toggle=Show coordinates
+
+ui.show.protection.toggle=Show protection time
+
+ui.settings.saved=Your settings have been saved.
+
+death.message=You died at %1, dimension %2.
+announce.death.message=The player died at %1, dimension %2.
+confirm.teleport.message=Use the item again to confirm teleport.
+tomb.protected.message=The tomb is protected for %1 minutes.

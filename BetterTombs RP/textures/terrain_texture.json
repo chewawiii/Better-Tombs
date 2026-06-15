@@ -1,0 +1,12 @@
+{
+	"resource_pack_name": "ChedTombs",
+	"texture_name": "atlas.terrain",
+	"texture_data": {
+		"tombstone_1": {
+			"textures": "textures/blocks/tombstone_1.png"
+		},
+		"tombstone_2": {
+			"textures": "textures/blocks/tombstone_2.png"
+		}
+	}
+}
