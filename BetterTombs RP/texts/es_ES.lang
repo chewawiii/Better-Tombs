@@ -1,8 +1,8 @@
 
 ui.info.title=Better Tombs | Gravestones Add-On
 
-tombs:tombstone_1.name=Tumba
-tombs:tombstone_2.name=Tumba
+tile.tombs:tombstone_1.name=Tumba
+tile.tombs:tombstone_2.name=Tumba
 
 spawn.message=§eUsa /settings para ver los ajustes de Better tombs.
 
