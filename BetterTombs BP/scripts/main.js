@@ -19,6 +19,7 @@ world.afterEvents.worldLoad.subscribe(() => {
 
 world.afterEvents.playerSpawn.subscribe(({ initialSpawn, player }) => {
 	if (!initialSpawn) return;
+	player.sendMessage(translate("spawn.message"));
 
 	const raw = player.getDynamicProperty(CONFIG_PREFIX);
 	if (!raw) {
