@@ -70,6 +70,9 @@ ui.show.protection.toggle=Mostrar tiempo de protección
 
 ui.settings.saved=Tus ajustes se han guardado.
 
+ui.changelog.title=Cambios
+ui.changelog.body=§lBetterTombs v1.0.0§r\n\n- Tumbas al morir con items o experiencia.\n- Protección contra intrusos.\n- Maldiciones configurables.\n- Ajustes personales y del sistema.\n- Fragmento de alma con teletransporte.
+
 death.message=Haz muerto en %1, dimensión %2.
 announce.death.message=El jugador ha muerto en %1, dimensión %2.
 confirm.teleport.message=Usa el item otra vez para confirmar el teletransporte. 

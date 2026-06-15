@@ -58,6 +58,7 @@ function openInfoMenu(player) {
 					break;
 
 				case "changelog":
+					changelogMenu(player);
 					break;
 
 				case "close":
@@ -204,5 +205,15 @@ function settingsMenu(player) {
 
 		player.setDynamicProperty(CONFIG_PREFIX, JSON.stringify(newConfig));
 		player.sendMessage({ rawtext: [{ translate: "ui.settings.saved" }] });
+	});
+}
+
+function changelogMenu(player) {
+	const form = new ActionFormData();
+	form.title(translate("ui.changelog.title"));
+	form.body(translate("ui.changelog.body"));
+	form.button(translate("ui.close.button"));
+	form.show(player).then((res) => {
+		if (res.canceled) return;
 	});
 }

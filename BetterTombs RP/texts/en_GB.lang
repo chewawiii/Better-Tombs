@@ -69,6 +69,9 @@ ui.show.protection.toggle=Show protection time
 
 ui.settings.saved=Your settings have been saved.
 
+ui.changelog.title=Changelog
+ui.changelog.body=§lBetterTombs v1.0.0§r\n\n- Tombs when dying with items or experience.\n- Protection against intruders.\n- Configurable curses.\n- Personal and system settings.\n- Soul Fragment teleport item.
+
 death.message=You died at %1, dimension %2.
 announce.death.message=The player died at %1, dimension %2.
 confirm.teleport.message=Use the item again to confirm teleport.
