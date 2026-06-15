@@ -23,4 +23,4 @@ Death no longer means losing everything without a trace. BetterTombs stores your
 Use the following command to open the settings menu:
 
 ```mcfunction
-/ched:settings
+/settings
