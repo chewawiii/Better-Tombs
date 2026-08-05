@@ -1,0 +1,69 @@
+## Blocks
+tile.tombs:tombstone_1.name=Tombstone
+tile.tombs:tombstone_2.name=Tombstone
+
+## Messages
+message.initialSpawn=§bUse §d/ets:settings §bto configure Epic Tombstones.
+message.player.death=§7Your soul was sealed in §c%2$s§7: §c%1$s§7.
+message.system.death=§7Fell in §c%2$s§7: §c%1$s§7.
+message.teleporting=§eThe soul pearl carries you back...
+message.tomb.protected=§cThis tomb is sealed. It will open in §f%1$s §cminutes.
+message.tomb.cursed=§5A cursed presence stirs around you...
+message.settings.saved=§aSettings saved.
+message.cantTeleport=§7The seal has been broken. §cThis tomb no longer exists.
+
+## HUD
+hud.distance=§7Tomb: §f%1$sm §8| §a%2$s min remaining
+hud.unprotected=§7Tomb: §f%1$sm §8| §cunprotected
+hud.otherDim=§7Tomb: §cdifferent dim. §8| §a%1$s min remaining
+hud.unprotected.otherDim=§7Tomb: §cdifferent dim. §8| §cunprotected
+
+## Form - General
+form.title=Epic Tombstones
+form.section.dropdown=Section
+form.section.system=System Settings
+form.section.player=Personal Settings
+form.section.changelog=Changelog
+
+## Form - System General
+form.annDeath.toggle=Announce deaths in chat
+form.maxTombs.slider=Max. tombs per player
+form.maxTombs.tooltip=Use 0 to allow unlimited tombs.
+
+## Form - Protection
+form.protection.toggle=Enable protection seal
+form.duration.slider=Seal duration
+form.duration.tooltip=Duration in minutes. While the seal is active, only the owner can recover the tomb.
+form.bypass.toggle=Operators can break seals
+
+## Form - Curse
+form.curse.toggle=Enable intruder curse
+form.curseLevel.dropdown=Curse intensity
+form.curseLevel.easy=Weak
+form.curseLevel.normal=Normal
+form.curseLevel.hard=Intense
+form.curseLevel.extreme=Devastating
+form.curseEntity.dropdown=Summon
+form.entity.zombie=Zombie
+form.entity.husk=Husk
+form.entity.skeleton=Skeleton
+form.entity.vex=Vex
+form.curseEffect.dropdown=Effect
+form.effect.slowness=Slowness
+form.effect.weakness=Weakness
+form.effect.blindness=Blindness
+form.effect.darkness=Darkness
+form.effect.poison=Poison
+form.effect.nausea=Nausea
+
+## Form - Personal
+form.itemChance.dropdown=Soul pearl chance
+form.itemChance.none=Disabled
+form.itemChance.low=Low
+form.itemChance.medium=Medium
+form.itemChance.high=High
+form.hud.toggle=Show tomb HUD
+form.locatorbar.toggle=Show on locator bar
+
+## Form - Changelog
+form.changelog.label=§l§6Changelog v1.1.1 (Bug Fix)§r\n\n§b§lFixes§r\n§7- Fixed item lore not being cleaned up correctly when recovering a tomb\n§7- Fixed an unnamed item, now called Soul Pearl\n§7- Fixed the Soul Pearl's level cost formula:\n§7  Lvl 60 -> 100% = -15 lvl\n§7  Lvl 50 -> 100% = -25 lvl\n§7  Lvl 40 -> 100% = -36 lvl

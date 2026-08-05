@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.10",
+	"format_version": "1.26.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "tombs:tombstone_2",
@@ -17,7 +17,7 @@
 			}
 		},
 		"components": {
-			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:tags": ["minecraft:is_pickaxe_item_destructible"],
 			"minecraft:geometry": {
 				"identifier": "geometry.tombstone_2"
 			},

@@ -1,0 +1,70 @@
+## Bloques
+tile.tombs:tombstone_1.name=Lápida
+tile.tombs:tombstone_2.name=Lápida
+item.et:soul_pearl=Perla del alma
+
+## Mensajes
+message.initialSpawn=§bUsa §d/ets:settings §bpara configurar Epic Tombstones.
+message.player.death=§7Tu alma quedó sellada en §c%2$s§7: §c%1$s§7.
+message.system.death=§7Ha caído en §c%2$s§7: §c%1$s§7.
+message.teleporting=§eLa perla del alma te transporta de vuelta...
+message.tomb.protected=§cEsta tumba está sellada. Se abrirá en §f%1$s §cminutos.
+message.tomb.cursed=§5Una presencia maldita despierta a tu alrededor...
+message.settings.saved=§aAjustes guardados.
+message.cantTeleport=§7El sello se ha roto. §cEsta tumba ya no existe.
+
+## HUD
+hud.distance=§7Tumba: §f%1$sm §8| §a%2$s min restantes
+hud.unprotected=§7Tumba: §f%1$sm §8| §cdesprotegida
+hud.otherDim=§7Tumba: §cdim. diferente §8| §a%1$s min restantes
+hud.unprotected.otherDim=§7Tumba: §cdim. diferente §8| §cdesprotegida
+
+## Form - General
+form.title=Epic Tombstones
+form.section.dropdown=Sección
+form.section.system=Ajustes del sistema
+form.section.player=Ajustes personales
+form.section.changelog=Novedades
+
+## Form - Sistema general
+form.annDeath.toggle=Anunciar muertes en el chat
+form.maxTombs.slider=Máx. tumbas por jugador
+form.maxTombs.tooltip=Usa 0 para permitir tumbas ilimitadas.
+
+## Form - Protección
+form.protection.toggle=Activar sello de protección
+form.duration.slider=Duración del sello
+form.duration.tooltip=Duración en minutos. Mientras el sello esté activo, solo el dueño puede recuperar la tumba.
+form.bypass.toggle=Operadores pueden romper sellos
+
+## Form - Maldición
+form.curse.toggle=Activar maldición de intrusos
+form.curseLevel.dropdown=Intensidad de la maldición
+form.curseLevel.easy=Débil
+form.curseLevel.normal=Normal
+form.curseLevel.hard=Intensa
+form.curseLevel.extreme=Devastadora
+form.curseEntity.dropdown=Invocación
+form.entity.zombie=Zombie
+form.entity.husk=Disecado
+form.entity.skeleton=Esqueleto
+form.entity.vex=Vex
+form.curseEffect.dropdown=Efecto
+form.effect.slowness=Lentitud
+form.effect.weakness=Debilidad
+form.effect.blindness=Ceguera
+form.effect.darkness=Oscuridad
+form.effect.poison=Veneno
+form.effect.nausea=Náusea
+
+## Form - Personal
+form.itemChance.dropdown=Probabilidad de perla del alma
+form.itemChance.none=Desactivado
+form.itemChance.low=Baja
+form.itemChance.medium=Media
+form.itemChance.high=Alta
+form.hud.toggle=Mostrar HUD de tumba
+form.locatorbar.toggle=Mostrar en la barra de localización
+
+## Form - Changelog
+form.changelog.label=§l§6Cambios v1.1.1 (Arreglos)§r\n\n§b§lArreglos§r\n§7- Se arreglo el lore de los items que no se limpiaba bien al recuperar la tumba\n§7- Se arreglo un item sin nombre, ahora se llama Perla del Alma\n§7- Se corrigio la formula de costo en niveles de la Perla del Alma:\n§7  Nvl 60 -> 100% = -15 nvl\n§7  Nvl 50 -> 100% = -25 nvl\n§7  Nvl 40 -> 100% = -36 nvl
