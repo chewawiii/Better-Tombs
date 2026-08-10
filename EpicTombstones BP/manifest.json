@@ -5,13 +5,13 @@
 		"description": "Ratz Studios - Chewawiii",
 		"min_engine_version": [1, 26, 10],
 		"uuid": "4a71cda2-66a8-448f-9a95-5b5f259ff173",
-		"version": [1, 1, 1]
+		"version": [1, 1, 2]
 	},
 	"dependencies": [
 		{
 			// Resource Pack
 			"uuid": "a334b596-1ea5-46fb-9bf5-4e5c2029e13d",
-			"version": [1, 1, 1]
+			"version": [1, 1, 2]
 		},
 		{
 			"module_name": "@minecraft/server",
@@ -38,7 +38,7 @@
 	],
 	"metadata": {
 		"authors": ["Chewawiii"],
-		"license": "MTI",
+		"license": "CC-4.0",
 		"product_type": "addon"
 	}
 }

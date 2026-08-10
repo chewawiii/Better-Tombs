@@ -21,14 +21,9 @@ world.beforeEvents.entityHurt.subscribe((e) => {
 	const { hurtEntity: player, damage, damageSource } = e;
 	if (!(player instanceof Player)) return;
 
-	const health = player.getComponent("health").currentValue;
-	if (hasTotem(player) || health - damage >= 0) return;
-
-	if (playerCheck.has(player.name)) return;
-	playerCheck.add(player.name);
+	if (playerCheck.has(player)) return;
+	playerCheck.add(player);
 	e.cancel = true;
-
-	const damagingEntity = damageSource.damagingEntity;
 
 	system.run(() => {
 		const inventory = player.getComponent("inventory").container;
@@ -46,6 +41,7 @@ world.beforeEvents.entityHurt.subscribe((e) => {
 			EquipmentSlot.Legs,
 			EquipmentSlot.Offhand,
 		];
+
 		for (const slot of armorSlots) {
 			const item = equippable.getEquipment(slot);
 			if (!item) continue;
@@ -53,13 +49,27 @@ world.beforeEvents.entityHurt.subscribe((e) => {
 		}
 
 		const cause = damageSource.cause === "projectile" ? "entityAttack" : damageSource.cause;
+		const damagingEntity = damageSource.damagingEntity;
 
 		player.applyDamage(damage, {
 			cause: cause,
 			damagingEntity: damagingEntity?.isValid ? damagingEntity : undefined,
 		});
 
-		playerCheck.delete(player.name);
+		system.runTimeout(() => {
+			for (let i = 0; i < inventory.size; i++) {
+				const item = inventory.getItem(i);
+				if (!item) continue;
+				inventory.setItem(i, removeLore(item, player.name));
+			}
+
+			for (const slot of armorSlots) {
+				const item = equippable.getEquipment(slot);
+				if (!item) continue;
+				equippable.setEquipment(slot, removeLore(item, player.name));
+			}
+			playerCheck.delete(player);
+		}, 20);
 	});
 });
 
@@ -113,19 +123,6 @@ world.afterEvents.entityDie.subscribe(({ deadEntity: player, damageSource }) => 
 		world.sendMessage(translate("message.system.death", [coords, dimName]));
 	});
 });
-
-/**
- * Revisa si el jugador tiene el totem
- */
-function hasTotem(player) {
-	const equippable = player.getComponent("equippable");
-	const mainHand = equippable.getEquipment(EquipmentSlot.Mainhand);
-	const offHand = equippable.getEquipment(EquipmentSlot.Offhand);
-	return (
-		mainHand?.typeId === "minecraft:totem_of_undying" ||
-		offHand?.typeId === "minecraft:totem_of_undying"
-	);
-}
 
 /**
  * Agrega el nick del jugador en el lore
@@ -275,4 +272,11 @@ function soulCircleEffect(dimension, location) {
 		const z = location.z + radius * Math.sin(angle);
 		dimension.spawnParticle("minecraft:soul_particle", { x, y: location.y + 0.5, z });
 	}
+}
+
+function removeLore(item, playerName) {
+	const lore = item.getLore();
+	const newLore = lore.filter((line) => !line.includes(playerName));
+	item.setLore(newLore);
+	return item;
 }

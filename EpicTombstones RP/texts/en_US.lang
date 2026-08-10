@@ -66,4 +66,4 @@ form.hud.toggle=Show tomb HUD
 form.locatorbar.toggle=Show on locator bar
 
 ## Form - Changelog
-form.changelog.label=§l§6Changelog v1.1.1 (Bug Fix)§r\n\n§b§lFixes§r\n§7- Fixed item lore not being cleaned up correctly when recovering a tomb\n§7- Fixed an unnamed item, now called Soul Pearl\n§7- Fixed the Soul Pearl's level cost formula:\n§7  Lvl 60 -> 100% = -15 lvl\n§7  Lvl 50 -> 100% = -25 lvl\n§7  Lvl 40 -> 100% = -36 lvl
+form.changelog.label=§l§6Changelog v1.1.2 (Bug Fix)§r\n\n§b§lFixes§r\n§7- Fixed a bug where taking damage without dying would leave the lore permanently stuck on your items, breaking their ability to stack.
